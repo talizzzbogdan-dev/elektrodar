@@ -38,6 +38,10 @@ p{margin:0}
 .logo{font-family:var(--display);font-weight:700;letter-spacing:-.02em;font-size:23px;text-decoration:none;display:flex;align-items:center;gap:10px}
 .logo img{width:44px;height:44px;display:block;flex:none;border-radius:50%;box-shadow:0 0 0 1px var(--line);transition:transform .6s var(--ease)}
 .logo:hover img{transform:rotate(-12deg)}
+.logo{flex:none}
+.logo-text{display:flex;flex-direction:column;line-height:1.05;white-space:nowrap}
+.logo-text b{font-weight:700}
+.logo-text small{font-family:var(--body);font-weight:500;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 .foot-brand{display:flex;align-items:center;gap:12px}
 .foot-brand img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 1px var(--line)}
 .nav{display:flex;gap:6px;margin-left:auto;font-size:15px;white-space:nowrap}
@@ -58,6 +62,7 @@ p{margin:0}
 .burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
 .burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
 .nav .nav-extra{display:none}
+@media (max-width:1300px) and (min-width:1041px){.top .wrap>.tel{display:none}.top .btn{margin-left:auto}}
 @media (max-width:1040px){
   .burger{display:grid}
   .top .tel{margin-left:auto}
@@ -272,7 +277,8 @@ footer a:hover{color:var(--green)}
   .top .wrap{min-height:62px;gap:10px}
   .top .tel{display:none}
   .burger{margin-left:auto}
-  .logo{font-size:20px}
+  .logo{font-size:19px}
+  .logo-text small{font-size:10px;letter-spacing:.06em;margin-top:3px}
   .logo img{width:40px;height:40px}
   .nav{max-height:calc(100vh - 62px)}
   h1{font-size:clamp(31px,8.4vw,40px);letter-spacing:-.035em}
