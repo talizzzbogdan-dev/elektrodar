@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talizzzbogdan-dev.github.io/elektrodar/sitemap.xml
