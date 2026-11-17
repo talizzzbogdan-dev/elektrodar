@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Электродар Бобруйск</title>
 <meta name="description" content="Электродар: электромонтаж, водоснабжение и канализация, фундаменты, продажа и монтаж ЖБИ в Бобруйске и Бобруйском районе. Рассрочка, гарантия на работы.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
@@ -47,8 +48,10 @@ p{margin:0}
 .top .wrap{display:flex;align-items:center;gap:20px;min-height:70px}
 .progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--green);transform-origin:0 50%;transform:scaleX(0)}
 .logo{font-family:var(--display);font-weight:700;letter-spacing:-.02em;font-size:23px;text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo i{width:26px;height:26px;border-radius:9px;background:var(--green);display:block;position:relative}
-.logo i::after{content:"";position:absolute;inset:8px;border-radius:50%;background:var(--amber)}
+.logo img{width:44px;height:44px;display:block;flex:none;border-radius:50%;box-shadow:0 0 0 1px var(--line);transition:transform .6s var(--ease)}
+.logo:hover img{transform:rotate(-12deg)}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 1px var(--line)}
 .nav{display:flex;gap:6px;margin-left:auto;font-size:15px;white-space:nowrap}
 .nav a{text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:999px;transition:background .3s,color .3s}
 .nav a:hover,.nav a[aria-current="page"]{color:var(--green);background:var(--green-soft)}
@@ -268,7 +271,7 @@ footer a:hover{color:var(--green)}
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#top"><i></i>Электродар</a>
+    <a class="logo" href="#top"><img src="img/logo.svg" alt="" width="44" height="44">Электродар</a>
     <nav class="nav" aria-label="Разделы сайта">
       <a href="#elektromontazh">Электромонтаж</a>
       <a href="#voda-kanalizaciya">Вода и канализация</a>
@@ -614,7 +617,7 @@ footer a:hover{color:var(--green)}
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Электродар. Бобруйск и Бобруйский район.</div>
+    <div class="foot-brand"><img src="img/logo.svg" alt="Логотип Электродар" width="36" height="36"><span>© 2026 Электродар. Бобруйск и Бобруйский район.</span></div>
     <nav aria-label="Услуги">
       <a href="#elektromontazh">Электромонтаж</a>
       <a href="#voda-kanalizaciya">Вода и канализация</a>
